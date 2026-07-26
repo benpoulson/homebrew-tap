@@ -1,25 +1,25 @@
 class Phpxray < Formula
   desc "A fast PHP static analyzer written in Rust"
   homepage "https://github.com/benpoulson/phpxray"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/benpoulson/phpxray/releases/download/v0.2.0/phpxray-aarch64-apple-darwin.tar.xz"
-      sha256 "371fa962645242b4765a772b380b0b7ac171060f23ab31d1c93580a448f2e978"
+      url "https://github.com/benpoulson/phpxray/releases/download/v0.3.0/phpxray-aarch64-apple-darwin.tar.xz"
+      sha256 "5966101c5825fb721e0fd881b9721d81d257d8de4a66caef2d7759cf846d04c2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/benpoulson/phpxray/releases/download/v0.2.0/phpxray-x86_64-apple-darwin.tar.xz"
-      sha256 "6046dcd074f06447397f26584a9e42289b1f7febf3d75b02bcaa3483060a9957"
+      url "https://github.com/benpoulson/phpxray/releases/download/v0.3.0/phpxray-x86_64-apple-darwin.tar.xz"
+      sha256 "6275fb0e00eb17a644b866981ec3f3b161ac4bd5cf2610827769d881ad89f522"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/benpoulson/phpxray/releases/download/v0.2.0/phpxray-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "7829894eeca37af5434b2beac6099adef785fe952fa6c025389734a3a0b1b10d"
+      url "https://github.com/benpoulson/phpxray/releases/download/v0.3.0/phpxray-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "aa74a87049cbcc8f25be71aa2ea84edefde2a66e767e2d44a935b75af7b7307d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/benpoulson/phpxray/releases/download/v0.2.0/phpxray-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "9a3aba435cb75c1a8a98256ceca22452a7e1a66d231e14d28b0adbb5006559dc"
+      url "https://github.com/benpoulson/phpxray/releases/download/v0.3.0/phpxray-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "b2ebe6a232f822598ccf73038121c09c3bff4445e35622ab750862a138231eab"
     end
   end
   license "MIT"

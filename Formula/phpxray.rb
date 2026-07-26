@@ -5,21 +5,21 @@ class Phpxray < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/benpoulson/phpxray/releases/download/v0.3.0/phpxray-aarch64-apple-darwin.tar.xz"
-      sha256 "5966101c5825fb721e0fd881b9721d81d257d8de4a66caef2d7759cf846d04c2"
+      sha256 "44c0ea11c7a18f2cf48cce8c95a9f00612284cd960f771b5b59fcda2d91f4ae4"
     end
     if Hardware::CPU.intel?
       url "https://github.com/benpoulson/phpxray/releases/download/v0.3.0/phpxray-x86_64-apple-darwin.tar.xz"
-      sha256 "6275fb0e00eb17a644b866981ec3f3b161ac4bd5cf2610827769d881ad89f522"
+      sha256 "73a0ad5f06c3fe903010cd718e9b185d2d302913e4b4f42f29066926abd8367f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/benpoulson/phpxray/releases/download/v0.3.0/phpxray-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "aa74a87049cbcc8f25be71aa2ea84edefde2a66e767e2d44a935b75af7b7307d"
+      sha256 "c66debec983f1efcb0a16845701b385ba2e02a823e0985e4935ba6a850274e0e"
     end
     if Hardware::CPU.intel?
       url "https://github.com/benpoulson/phpxray/releases/download/v0.3.0/phpxray-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "b2ebe6a232f822598ccf73038121c09c3bff4445e35622ab750862a138231eab"
+      sha256 "ab2c63215651cf209d3e62e441bc44d4d227490c2829365cdeecd48e1b1b0de1"
     end
   end
   license "MIT"
